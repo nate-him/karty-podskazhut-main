@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root{
+  --bg-color: #F3EFEC;;
+  --text-color: #312A4E;;
+  --accent-color: #FFAB6B;
+  --main-font: "Raleway";
+  --accent-font: "STIX Two Text";
+}
+
+.page {
+  min-inline-size: 360px;
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--main-font), sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+blockquote,
+ul,
+ol,
+li,
+figure {
+  margin: 0;
+}
+
+.heading {
+  font-family: var(--accent-font), sans-serif;
+  line-height: 90%;
+  text-align: center;
+  font-weight: 600;
+}
+
+.content-section {
+  padding-left: 5vi;
+  padding-right: 5vi;
+}
