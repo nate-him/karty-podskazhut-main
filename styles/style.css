@@ -1,15 +1,15 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 :root{
   --bg-color: #F3EFEC;;
   --text-color: #312A4E;;
   --accent-color: #FFAB6B;
   --main-font: "Raleway";
   --accent-font: "STIX Two Text";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 .page {
@@ -33,13 +33,38 @@ figure {
 }
 
 .heading {
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), serif;
   line-height: 90%;
   text-align: center;
   font-weight: 600;
 }
 
+.header{
+  padding-top: 10%;
+}
+
+.header__tittle {
+  font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
+  margin-block-end: 40px;
+}
+
 .content-section {
-  padding-left: 5vi;
-  padding-right: 5vi;
+  padding: 0 5vi;
+}
+
+.content-title {
+  font-size: 30px;
+  margin: 7% 0 2.5%;
+}
+
+.content_text-block {
+  font-size: 18px;
+}
+
+.content_text-block .content__paragraph:not(:last-of-type) {
+  margin-block-end: 1.5em;
+}
+
+.content_text-block a{
+  color: inherit;
 }
