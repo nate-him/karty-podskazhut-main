@@ -43,8 +43,9 @@ figure {
   padding-top: 10%;
 }
 
-.header__tittle {
+.header__title {
   font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
+  padding-block-start: 10%;
   margin-block-end: 40px;
 }
 
@@ -52,19 +53,65 @@ figure {
   padding: 0 5vi;
 }
 
-.content-title {
+.content__title {
   font-size: 30px;
   margin: 7% 0 2.5%;
 }
 
-.content_text-block {
+.content__text-block {
   font-size: 18px;
 }
 
-.content_text-block .content__paragraph:not(:last-of-type) {
+.content__text-block .content__paragraph:not(:last-of-type) {
   margin-block-end: 1.5em;
 }
 
-.content_text-block a{
-  color: inherit;
+.content__text-block a{
+  color: currentColor;
+}
+
+.content__blockquote {
+  inline-size: 75%; /*width: 75%;*/
+  margin-inline: auto; /* вместо margin: 0 auto;*/
+  margin-block-end: 1.5em;
+  font-style: italic;
+  line-height: 200%;
+}
+
+.content__list {
+  list-style: none;
+  /* text-indent: 40px; */
+  padding: 0 0 0 40px;
+}
+
+.content__list li{
+  position: relative;
+}
+
+
+.content__list li:not(:last-of-type) {
+  margin-block-end: 10px;
+}
+
+.content__list li::before {
+  content: '';
+  position: absolute;
+  inline-size: 15px;
+  block-size: 15px;
+  margin-block-start: -7.5px;
+  background-image: url(../images/marker-light.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  inset-block-start: 50%;
+  inset-inline-start: -25px;
+}
+
+.content__text-block_type_first-lettered .content__paragraph:first-of-type::first-letter {
+  display: inline-block;
+  background-color: var(--accent-color);
+  font-size: 30px;
+  margin-inline-end: 1px;
+  padding: 0 4px;
+  font-weight: 700;
 }
