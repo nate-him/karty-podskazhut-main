@@ -1,14 +1,14 @@
-:root{
-  --bg-color: #F3EFEC;
-  --text-color: #312A4E;
-  --accent-color: #FFAB6B;
+:root {
+  --bg-color: #f3efec;
+  --text-color: #312a4e;
+  --accent-color: #ffab6b;
   --main-font: "Raleway";
   --accent-font: "STIX Two Text";
 }
 
 .theme_dark {
   --bg-color: #171717;
-  --text-color: #B3B3B3;
+  --text-color: #b3b3b3;
   --accent-color: transparent;
 }
 
@@ -60,7 +60,7 @@ button:disabled {
   font-weight: 600;
 }
 
-.header{
+.header {
   padding-block-start: 10%;
 }
 
@@ -73,7 +73,7 @@ button:disabled {
   padding: 0 5vi;
 }
 
-.header__menu{
+.header__menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -102,14 +102,6 @@ button:disabled {
 
 .header__theme-button:hover {
   text-decoration: underline;
-} 
-
-.header__theme-button_type_dark {
-
-}
-
-.header__theme-button_type_light {
-
 }
 
 .header__theme-button_is-active {
@@ -117,7 +109,7 @@ button:disabled {
 }
 
 .header__theme-button_is-active::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   block-size: 0.5ch;
@@ -144,7 +136,7 @@ button:disabled {
   margin-block-end: 1.5em;
 }
 
-.content__text-block a{
+.content__text-block a {
   color: currentColor;
 }
 
@@ -161,7 +153,7 @@ button:disabled {
   padding: 0 0 0 40px;
 }
 
-.content__list li{
+.content__list li {
   position: relative;
 }
 
@@ -170,7 +162,7 @@ button:disabled {
 }
 
 .content__list li::before {
-  content: '';
+  content: "";
   position: absolute;
   inline-size: 15px;
   block-size: 15px;
@@ -187,7 +179,8 @@ button:disabled {
   background-image: url(../images/marker-dark.svg);
 }
 
-.content__text-block_type_first-lettered .content__paragraph:first-of-type::first-letter {
+.content__text-block_type_first-lettered
+  .content__paragraph:first-of-type::first-letter {
   display: inline-block;
   background-color: var(--accent-color);
   font-size: 30px;
@@ -196,7 +189,9 @@ button:disabled {
   font-weight: 700;
 }
 
-.theme_dark .content__text-block_type_first-lettered .content__paragraph:first-of-type::first-letter {
+.theme_dark
+  .content__text-block_type_first-lettered
+  .content__paragraph:first-of-type::first-letter {
   border: 1px solid currentColor;
 }
 
@@ -243,7 +238,7 @@ button:disabled {
 }
 
 .colored-text::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   block-size: 0.5ch;
